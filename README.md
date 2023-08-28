@@ -2,8 +2,9 @@
 The source code of "Local and Global: Temporal Question Answering via Information Fusion"
 ## Usage
 ```
-python train_pre.py
+python train_qa_model.py
 ```
+Note that you should put the download data for pervious file dictionary.
 ## Cite
 
 If you find our work can help your research, please cite our work! <br>
