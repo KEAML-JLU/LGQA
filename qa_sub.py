@@ -175,7 +175,7 @@ class QA_Sub(nn.Module):
 
         # One extra entity for new before & after question type
         tails2 = a[9].cuda()
-        """
+        
         #Select subgraph via the question entity
         question_ent2id_padded = a[13]
         question_ent2id_padded_unzip = [list(filter(lambda x: x>=0, each)) for each in question_ent2id_padded]
@@ -192,7 +192,7 @@ class QA_Sub(nn.Module):
 
         h1 = self.gatnet(batch_graph, batch_f)
         h1 = self.weight_and_sum(batch_graph, h1)
-        """
+        
         # TKG embeddings
         head_embedding = self.entity_time_embedding(heads)
         tail_embedding = self.entity_time_embedding(tails)
